@@ -2,13 +2,29 @@
 body
 {
     background-image: url("img/slashes.png");
-    color: white;
+    color: #FEEEC1;;
+}
+
+/* Style du titre */
+#titre
+{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: -5px -4px 4px #BF1522;
 }
 
 /* Style de la barre de navigation */
+nav
+{
+    background-color: #BF1522;
+	border: 1px solid white;
+}
+
 #nav-barre
 {
     list-style-type: none; /* Retire les "puces" */
+    padding: 0px;/* Colle le texte a la barre */
+    margin: 0px;
 }
 
 .lien-nav
@@ -18,7 +34,21 @@ body
 
 .lien-nav a
 {
+    display: inline-block;
+    padding: 15px 15px;
     text-decoration: none;
+    color: #FEEEC1;
+}
+
+.lien-nav a:hover
+{
+    background-color: orangered;
+}
+
+#login-msg
+{
+    padding: 15px 15px;
+    float: right;
 }
 
 /* Style du footer */
