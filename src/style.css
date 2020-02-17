@@ -1,3 +1,27 @@
-#nav-barre {
-  list-style-type: none;
+/* Style de la barre de navigation */
+#nav-barre
+{
+    list-style-type: none; /* Retire les "puces" */
+}
+
+.lien-nav
+{
+    display: inline;
+}
+
+/* Style du footer */
+footer
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nom
+{
+    font-weight: bold;
+}
+
+.prenom
+{
+    font-style: italic;
 }
