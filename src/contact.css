@@ -1,0 +1,61 @@
+section
+{
+    display: flex;
+    margin: 0 10%;
+}
+
+form
+{
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 500px;
+}
+
+textarea
+{
+    resize: none;
+    width: 90%;
+    height: 300px;
+}
+
+input
+{
+    width: 70%;
+}
+
+#contact-form
+{
+    background-color: royalblue;
+    width: 90%;
+    padding-top: 10px;
+}
+
+#info-form
+{
+    background-color: orange;
+    width: 30%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#btnContact
+{
+    text-align: center;
+    margin: 14px 45%;
+}
+
+.form-gauche
+{
+    float: left;
+    width: 18%;
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.form-droite
+{
+    float: right;
+    width: 80%;
+    margin-top: 10px;
+}

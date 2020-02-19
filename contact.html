@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Web - Contact</title>
+
+    <!-- CSS & Script Global -->
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="javascript" type="text/js" href="src/script.js">
+
+    <!-- CSS & Script spécifique a la page -->
+    <link rel="stylesheet" type="text/css" href="src/contact.css">
+
+    <!-- Bibliothèque pour les icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+</head>
+
+<body>
+    <!-- En-tête du site -->
+    <header>
+
+        <h1 id="titre"><a href="index.html">Test Code Web</a></h1>
+
+        <!-- Barre de navigation -->
+        <nav>
+            <ul id="nav-barre">
+                <li class="lien-nav"><a href="index.html">Accueil</a></li>
+                <li class="lien-nav"><a href="aide.html">Aide</a></li>
+                <li class="lien-nav"><a href="propos.html">A propos</a></li>
+                <li class="lien-nav"><a id="active-lien" href="contact.html">Contact</a></li>
+                <li class="lien-nav" id="login-msg">Bienvenue Visiteur</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corp du site -->
+    <section>
+        <form id="contact-form">
+            <div class="form-gauche">
+                <label for="name">Nom</label>
+            </div>
+            <div class="form-droite">
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom  - Requis" required="required"/>
+            </div>
+            <br>
+            <div class="form-gauche">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="form-droite">
+                <input type="email" id="email" name="email" placeholder="Entrez votre e-mail  - Requis" required="required"/>
+            </div>
+            <br>
+            <div class="form-gauche">
+                <label for="subject">Sujet</label>
+            </div>
+            <div class="form-droite">
+                <input type="text" id="sujet" name="sujet" placeholder="Entrez votre sujet - Requis" required="required"/>
+            </div>
+            <br>
+            <div class="form-gauche">
+                <label for="name">Message</label>
+            </div>
+            <div class="form-droite">
+                <textarea id="message" name="message" required="required" placeholder="Votre message ici ... - Requis"></textarea>
+            </div>
+            <br>
+            <button type="submit" id="btnContact">Contacter</button> <!-- Reset pour afficher la fonction js -->
+        </form>
+
+        <form id="info-form">
+            <legend>Mes infos</legend>
+            <br>
+            <address>
+                <strong>Valentin JUSTIN</strong><br>
+                19 rue de Lambres,<br>
+                Liettres, 62145<br>
+                <abbr title="Phone">
+                    T:</abbr>
+                06.45.23.41.30
+            </address>
+            <br>
+            <address>
+                <strong>Mail</strong><br>
+                <a href="mailto:#">vltn.justin@gmail.com</a>
+            </address>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.8155390225065!2d2.340735788857364!3d50.59504483015178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd03bff11505f5%3A0x25fb082dcd05254d!2s19+Rue+de+Lambres%2C+62145+Liettres!5e0!3m2!1sfr!2sfr!4v1538990959221" width="100%" height="275px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </form>
+    </section>
+
+    <!-- Pied du site -->
+    <footer>
+        <p>Test Web by <span class="nom">JUSTIN</span> <span class="prenom">Valentin</span> - <a href="https://github.com/Chammalo" target="_blank" class="fab fa-github"></a> - 17/02/2020</p>
+    </footer>
+</body>
+
+</html>

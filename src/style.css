@@ -1,8 +1,22 @@
+/* Fixe le site sur les bord de l'écran */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 /* Style global de la page */
+html
+{
+    position: relative; /* Permet de coller le footer en bas de la page, meme s'il y a beaucoup de contenu */
+    min-height: 100%;
+}
+
 body
 {
     background-image: url("img/slashes.png");
-    color: #FEEEC1;;
+    color: #FEEEC1;
+    margin-bottom: 50px; /* Correspond a la hauteur du footer */
 }
 
 /* Style du titre */
@@ -11,36 +25,45 @@ body
     text-align: center;
     font-size: 100px;
     text-shadow: -5px -4px 4px #BF1522;
+    margin: 15px;
+}
+
+#titre a
+{
+    text-decoration: none;
+    color: #FEEEC1;
 }
 
 /* Style de la barre de navigation */
-nav
-{
-    background-color: #BF1522;
-	border: 1px solid white;
-}
-
 #nav-barre
 {
     list-style-type: none; /* Retire les "puces" */
     padding: 0px;/* Colle le texte a la barre */
     margin: 0px;
+    margin-bottom: 30px;
+    background-color: #BF1522;
+    border: 1px solid white;
 }
 
 .lien-nav
 {
-    display: inline;
+    display: inline-block;
 }
 
 .lien-nav a
 {
-    display: inline-block;
+    display: block;
     padding: 15px 15px;
     text-decoration: none;
     color: #FEEEC1;
 }
 
 .lien-nav a:hover
+{
+    background-color: orangered;
+}
+
+#active-lien
 {
     background-color: orangered;
 }
@@ -54,8 +77,11 @@ nav
 /* Style du footer */
 footer
 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .nom
@@ -68,7 +94,9 @@ footer
     font-style: italic;
 }
 
-.fa
+.fab
 {
+    font-size: large;
     text-decoration: none;
+    font-size: 30px;
 }
